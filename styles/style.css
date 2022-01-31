@@ -1,0 +1,621 @@
+body{
+   margin: auto;
+   width: 100%;
+}
+
+.sign-in{
+	height:316px
+}
+
+.item-img{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.img2{
+	width: 68%;height: 620px;
+	margin-top: 20vh;
+	border-radius: 7px;
+	z-index:-1 ;
+	transform:rotateX(30deg) rotateY(-10deg);
+	box-shadow: 11px 2px 2px 2px aqua
+}
+nav{
+
+position: fixed;
+background-color: #FEECE9;
+ display: flex;
+ align-items: center;
+ justify-content: space-between; 
+ 
+ }
+ .clear,nav{
+ 	height: 60px;width: 100%;z-index: 1	
+ }
+ nav ul{
+ 	display: flex; 
+
+ }
+  ul li{
+ 	list-style: none;
+ }
+ nav ul li a,.logo a{
+ 	text-decoration: none;
+ 	color: #072227;
+ 	font-size: 20px;
+ 	padding: 0 20px;
+ 	font-family: 'Oswald', sans-serif;   /*'Rubik Beastly', cursive;*/
+ 	cursor: pointer;
+ }
+ .logo{
+   padding: 0 20px
+ }
+
+
+
+ .home-item{
+ 	display: flex;
+ 	margin-top: 37px
+
+ }
+
+ .home-item-product{
+  width: 40%; 
+  /*z-index: -1*/
+ }
+ .home-item > img{
+ 	width: 60%;
+ 	height: 110vh;
+ 	margin-top: 2vh
+ }
+ .home-item-product .product{
+ 	display: flex;
+ 	width: 87%;
+ 	height: 224px;
+ 	margin:2vh 5%;
+ 	border: 2px solid #ddd;
+    
+  }
+ .home-item-product .product img{
+ 	width:40%;
+ 	height: 100%;
+    margin-right: 12px;
+ }
+ .home-item-product .product div{
+ 	position: relative;
+ 	width: 60%;
+ 	overflow: hidden;
+
+ }
+
+ .home-item-product .product div .coeur{
+ 	position: absolute;
+ 	right: 2%;
+ 	bottom: 2%;
+ 	cursor: pointer; 
+ }
+ .coeur:hover{
+ 	font-size: 22px ;
+ 	transition: font-size 0.5s 
+ }
+ .home-item-product .product div button{
+ 	position: absolute;
+ 	bottom: 2%;
+ 	left: 0;
+ 	border-radius: 5px;
+    background-color: green;
+    color: white;
+    width: 100px;
+    height: 36px;
+    padding: 6px;
+    border:2px;
+    transition: background-color 0.5s ease
+ }
+ .home-item-product .product div button:hover{
+ 	border: 2px solid green;
+ 	color: green;
+ 	background-color: white;
+
+ }
+  
+.home-item-product .product div button,.home-item-product .product div h2 a,.home-item-product .product label{
+  margin-left: 0px;font-family: 'Oswald', sans-serif;cursor: pointer;}
+
+.home-item-product .product label{
+	font-size: 23px;	
+}
+ .home-item-product .product div h2 a{
+font-size: 18px;
+text-decoration: none;
+color: black;
+ 
+}
+
+ .icons-noti{
+ 	display: none;
+ 	position: absolute;
+ 	width: 17px;
+ 	height: 17px;
+ 	background-color: red;
+ 	border-radius: 50%;
+ 	text-align: center;
+ 	color: white;
+ 	top: -8px;
+ 	right: -8px;
+ 	font-family: 'Oswald', sans-serif;
+ 	font-size: 12px
+ }
+
+ div.notification-list{
+ 	display: none;
+ 	margin:0;
+ 	border: 1px solid black;
+ 	border-radius: 5px;
+ 	 position: absolute;
+    width: 150px;
+    text-align: center;
+    background-color: #ddd;
+    top: 148%;
+    left: -242%;
+    line-height: 10px
+ }
+
+ div.notification-list a{
+ 	position: absolute;
+ 	bottom: 6px;
+ 	left: 20%;
+     font-family: 'Oswald', sans-serif;
+     font-size: 17px
+ }
+  div.notification-list p{
+  	margin-bottom: 25px;
+  	line-height: 1.1;
+  	border-bottom: 1px solid black;
+  	font-family: 'Oswald', sans-serif;
+  	padding: 6px
+  }
+
+
+
+#ProductDetails{
+  width:80%;margin: auto;text-align: center;font-family: 'Oswald', sans-serif;}
+  #imgProductDetails{
+  	width: 90%;height: 65vh;margin-top: 2vh;border:2px solid black
+  }
+
+ #ProductDetails h2{
+  	border-radius: 50px;border: 2px solid black
+  }
+
+#search{
+	width: 51%; margin-top: 6px; border-radius: 5px;text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 26px;
+    border: 1px solid #ddd
+    /*text-transform: uppercase;*/
+    
+}
+
+
+.ajout-product{
+	cursor: pointer;
+    border:2px solid black;
+	background-color: #FEECE9;
+    width: 6%;
+    height: 84px;
+    text-align: center;
+    line-height: 85px;
+    font-size: 69px;
+    border-radius: 50%;
+    right: 24px;
+    bottom: 24px;
+    position: fixed;
+    transition: padding 0.5s ease
+}
+.ajout-product:hover{
+	opacity: 0.7;
+	padding: 2px
+}
+.ajout-product a{
+	text-decoration: none;
+	color:black;
+}
+
+
+
+
+
+.addProduct{
+	width: 80%;
+	height: 427px;
+	background-color: #fdfbfb;
+	position: relative;
+	text-align: center;
+    margin: auto;
+    margin-top: 5vh;
+    border: 1px solid #ddd
+}
+
+.addProduct-container{
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-53%);
+	font-family: 'Oswald', sans-serif;
+}
+.addProduct-container input{
+	width: 100%;
+	height: 29px;
+	margin-top: 19px;
+	border-radius: 5px;
+	font-family: 'Oswald', sans-serif;
+	/*border: 2px solid #ddd*/
+}
+.addProduct-container select{
+	margin-top: 20px;
+	width: 75px;
+	border-radius: 5px;
+	height: 25px;
+	font-size: 18px;
+}
+.addProduct-container label{
+	font-size: 25px
+}
+
+
+
+#addPr,#editPr{
+   width: 31%;
+    background-color: white;
+    color: green;
+    border: 2px solid green;
+    font-size: 20px;
+    height: 36px;
+    cursor:pointer; 
+    margin-top:20px;
+    transition: background-color 0.5s ease
+    }
+
+#addPr:hover{
+	 background-color:green;
+       color: white;
+}
+
+    #editPr{
+    	background-color: white; color:blue;border:2px solid blue;
+    }
+    #editPr:hover{
+       background-color:blue;
+       color: white;
+    }
+
+
+
+.addProduct-container-img{
+	position: relative;
+    width: 33%;
+    border:2px solid black;
+    height: 140px;
+    margin-top: 10px}
+
+ .addProduct-container-Addimg{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     width: 70px;
+      cursor: pointer;
+    }
+
+
+
+    #RemoveProduct{
+    position: absolute;
+    margin-left: 37%;
+    width: 105px;
+    height: 36px;
+     background-color: red;
+     border: 2px;
+     left: 3%;
+     transition: background-color 0.5s ease
+     }
+     #RemoveProduct:hover{
+       border: 2px solid red;
+       color: red;
+       background-color: white
+     }
+
+    #EditProduct{
+     position: absolute;
+    bottom: 41px;
+    background-color: white ;
+    border: 2px solid blue;
+    height: 36px;
+    color:blue ;  
+    margin-bottom: 5px;
+    transition: background-color 0.5s ease;
+    }
+    #EditProduct:hover{
+    	background-color: blue;
+    	color: white;
+    }
+
+     .containerProfil{
+     	margin-top: 10px;
+     	display: flex;
+     	flex-direction: column;
+     	align-items: center;
+        font-family: 'Oswald', sans-serif;
+        border:1px solid #ddd;
+     	 
+     }
+
+    .img_profil{
+    	border-radius: 50%;
+    	width:  249px;
+    	height: 259px;
+    	margin-bottom: 10px;
+    	margin-top: 10px
+    	
+    }
+.containerProfil h3{
+	border-bottom: 1px solid #836d6d;
+	width: 20%;
+	text-align: center;
+}
+
+
+
+
+#user_img {
+    display: none;
+    position: absolute;
+    width: 53px;
+    height: 45px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    bottom: -9px;
+    left: -11px;
+    border: 2px solid black;
+}
+ /*prix total*/
+ .prixTotal,.prixTotalphone{
+ 	width: 58%;
+ 	background-color: #fbf0f0;
+ 	height: 230px;
+ 	position: relative;
+ 	border:2px solid #ddd ;
+ 	margin-top: 9px;
+ 	z-index: -1;
+ 	font-family: 'Oswald', sans-serif;
+ }
+ .prixTotalphone div,.prixTotal div{
+ 	 position: absolute; left: 50%;top: 50%;font-size: 63px;transform: translate(-50%,-50%);
+ }
+
+ .prixTotalphone{
+ 	display: none;
+ }
+ /*button payer*/
+ .btnPayer,.btnPayer1{
+ 	 position: absolute;
+    right: 25%;
+    top: 357px;
+    width: 106px;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size:20px;
+ }
+ .btnPayer1{
+ 	display: none
+ }
+ /*FOOTER*/
+footer {
+    position: relative;
+    height: 121px;
+    margin: auto;
+    background-color: rgb(249 246 246);
+    border-top: 1px solid black;
+    border-left: 9px solid #FEECE9;
+    border-right: 9px solid #FEECE9}
+
+footer .footer-child{
+	position: absolute;
+   width: 20%;
+   height: 40%;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   line-height: 20px;
+
+}
+footer .footer-child a i#icons{
+	font-size:20px;
+	color: black
+}
+
+footer .footer-child a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+footer .footer-child p{
+   color:black;
+   font-family: 'Oswald', sans-serif;
+}
+
+/*POUR LES TABELLETS;*/
+
+@media screen and (min-width: 781px),(min-device-width: 781px) and (max-width: 1207px),(max-device-width:1207px)
+ {
+ 	nav{
+ 		/*background-color: red*/
+ 	}
+
+  body{
+  	overflow-x: hidden;
+  }
+  .item-img {
+    width: 60%;
+}
+.home-item-product {
+    width: 40%;
+}
+
+.home-item-product .product {
+    height: 286px;
+    width: 110%;
+    
+}
+
+.ajout-product {
+    width: 76px;
+    height: 81px
+}
+#addPr, #editPr{
+	width: 120px
+}
+#RemoveProduct {
+    margin-left: 84px;
+    width: 87px;
+    font-size: 11px;}
+
+    .home-item-product .product div button {
+    width: 87px;}
+
+ footer .footer-child {
+    width: 40%;
+     }
+
+     .prixTotal{
+     	margin-left: 97px;
+        width: 50%;
+        background-color: red
+     }
+     .prixTotal div{
+     	font-size: 42px
+     }
+
+
+ }
+
+
+ /* POUR LES APPAREILS QU ONT DANS LA TAILLE 574PX AU MAXIMUM*/
+@media screen and (max-device-width: 780px),(max-width: 780px)  {
+	.btnPayer{
+	display: none
+  }
+  .btnPayer1{
+	display: block;
+	top: 135px;
+    left: 48px
+  }
+
+	nav ul li a, .logo a {
+    font-size: 14px;
+    padding: 0px 15px;
+}
+.logo a{
+	margin-left: -24px;
+	font-size: 17px;
+}
+
+#search{
+width: 32%	
+}
+.item-img{
+	display: none;
+}
+
+.home-item-product .product {
+    width: 230%;
+    margin-left: 18px;
+}
+
+.ajout-product {
+    /*width: 11%;*/
+    width:64px;
+    height: 59px;
+    line-height: 65px;
+    font-size: 51px;
+    z-index: 1;
+    
+}
+
+#addPr, #editPr {
+    width: 120px;
+    }
+.addProduct-container select{
+	font-size:16px;
+}
+.addProduct-container label {
+    font-size: 23px;
+}
+div.notification-list {
+    width: 135px;
+}
+.img_profil {
+    width: 237px;
+    height: 252px;
+    margin-top: 10px;
+}
+.containerProfil h3 {
+    width: 54%}
+    .sign-in {
+    width: 100%;
+     }
+    .sign-in form input {
+    height: 35px;}
+h2{
+	margin-top: 43px;
+	font-size: 19px
+}
+.sign-in form input[type="submit"]{
+	width: 53%
+}
+#RemoveProduct {
+    margin-left: 100px;}
+
+    footer .footer-child {
+    width: 58%;
+     }
+     footer .footer-child p {
+    font-size: 13px;
+}
+.prixTotal{
+	display: none;
+}
+
+
+.prixTotalphone{
+	display: block;
+ 	width: 58%;
+ 	height: 190px;
+    width: 92%;
+    margin-left: 17px
+}
+ }
+ .prixTotalphone div{
+ 	font-size: 43px;
+ }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

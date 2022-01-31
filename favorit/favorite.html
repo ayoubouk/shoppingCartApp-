@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Favorites</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">  
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik+Beastly&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+		<div class="logo">
+			<a href="../index.html" >BOOK-SHOPPING</a>
+		</div>
+
+		<ul id="home">	
+			<li><a  id="connecter">Se connecter</a></li>
+			<li><a  id="register">S'inscrire </a></li>
+		</ul>
+		<ul style="display: none;position: relative;" id="user">
+			<li><a id="userName" href="../profil/profil.html"></a></li>
+			<li ><a style="padding-left: 5px;" href="">favorites</a></li>
+			<li style="position: relative;cursor: pointer;">
+				<i style="font-size: 25px; " class="fa fa-shopping-cart fa-1x icon_sho" ></i>
+				<div class="icons-noti"></div>
+				<div class="notification-list" >				
+					<a href="../carte_shopping/cart.html">view all</a>
+				</div>
+			</li>
+			<li><a href="" id="logoutFavorite">log out</a></li>
+			<img src="../images/product/utilsateur.webp" id="user_img">
+		</ul>
+	</nav>
+	<div class="clear"></div>
+	<div class="ajout-product"><a  href="../AddProduct/AddProduct.html">+</a></div>
+	<section class="home-item">
+		<div class="home-item-product"> 
+		</div>		
+	</section>
+	<script type="text/javascript" src="../js/js.js"></script>
+	<script type="text/javascript" src="../js/FavoritProduct.js"></script>
+	    
+
+</body>
+</html>
